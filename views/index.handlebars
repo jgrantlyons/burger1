@@ -1,3 +1,26 @@
 {{!-- burger template --}}
+<h1>{{Title}}</h1>
 
-{{!-- button to submit user input --}}
+<div class="container">
+    <div class="row">
+
+        <div id="tbdev" class="col-sm">
+            <p>to be devoured</p>
+            <ul>
+                {{#each all}}
+                
+                <li>{{this.burger_name}}</li>
+                {{/each}}
+            </ul>
+        </div>
+        <div id="dev" class="col-sm">
+            <p>Devoured</p>
+            <ul>
+                {{#each all}}
+                
+                <li>{{this.burger_name}}</li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>
